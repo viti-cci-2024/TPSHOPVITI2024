@@ -1,0 +1,209 @@
+.line{
+  width: 120px;
+  height: 13px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  position: relative;
+  }
+
+.headergrid {
+  display: grid;
+  grid-gap: 0px;
+}
+
+.headerrow1 {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr 4fr 1fr;
+  grid-gap: 0px;
+  background-color: #ffffff;
+  height: 95px;
+}
+
+.headerrow1mob {
+  display: none;
+}
+
+.headercol1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pour aligner verticalement */
+    justify-content: center; /* Pour aligner horizontalement */
+    width: 100%;
+    background-color: #fff;
+}
+.headercol1mob {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Pour aligner verticalement */
+  justify-content: center; /* Pour aligner horizontalement */
+  width: 100%;
+  background-color: #fff;
+}
+.headercol2 {
+  background-color: #ffffff;
+}
+
+.headercol2mob {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Pour aligner verticalement */
+  justify-content: center; /* Pour aligner horizontalement */
+  width: 100%;
+  background-color: #fff;
+}
+
+.headercol3 {
+  display: flex;
+  align-items: center; /* Pour aligner verticalement */
+  justify-content: center; /* Pour aligner horizontalement */
+}
+.headercol3mob {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Pour aligner verticalement */
+  margin-left: auto;
+  width: 100%;
+  background-color: #fff;
+}
+.headercol4 {
+  display: flex;
+  align-items: center; /* Pour aligner verticalement */
+  justify-content: center; /* Pour aligner horizontalement */
+}
+.headercol5 {
+  display: flex;
+  align-items: center; /* Pour aligner verticalement */
+  justify-content: center; /* Pour aligner horizontalement */
+}
+.headercol6 {
+  display: flex;
+  align-items: center; /* Pour aligner verticalement */
+  justify-content: center; /* Pour aligner horizontalement */
+}
+.headercol7 {
+  background-color: hsl(0, 0%, 100%);
+}
+.headercol8 {
+  display: flex;
+  align-items: center; /* Pour aligner verticalement */
+  justify-content: center; /* Pour aligner horizontalement */
+}
+
+.headergrid2 {
+  display: grid;
+  grid-gap: 0px;
+}
+
+.headerrow2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 10px;
+  background-color: #ffffff;
+  height: 340px;
+}
+
+.headercol21 {
+  background-image: url("img/plates-header.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+
+.headercol22 {
+  display: flex;
+  flex-direction: column;
+  background-color: #393935;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.headercol22 h1 {
+  margin: 0;
+  color: white;
+  font-size: 47px;
+}
+
+.headercol22 p {
+  margin: 0;
+  padding: 10px;
+  color: white;
+  width: 80%; /* Ajuster la largeur pour forcer le texte à se wrapper */
+}
+
+.headercol23 {
+  background-image: url("img/plates-header.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70%;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin: 10px 0;
+  background-color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.item p {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.item p:nth-child(2), .item p:nth-child(4) {
+    color: #9f9f9f;
+}
+
+@media only screen and (max-width: 767px) {  /* Breakpoint mobile à 767px */
+  .headerrow1 {
+    display: none; /* cache header desktop */
+  }
+  .headerrow1mob {
+    display: block;   /* revele header mobile */
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-gap: 0px;
+    background-color: #ffffff;
+    height: 67px;
+  }
+
+  .layout {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .item {
+    width: 45%; /* Deux items par ligne avec un peu d'espace entre eux */
+  }
+}
